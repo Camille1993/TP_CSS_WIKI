@@ -3,12 +3,19 @@ body{
 	font-family:'Asap';
 	color: #292728;
 	font-size: 10px;
+	background-color: #FBF8FB;
+}
+h2{
+	margin: 0;
+}
+h1{
+	margin: 0;
 }
 
 /*CSS du menu : titre et profil utilisateur*/
 .menu{
 	display: flex;
-	background-color: #FBF8FB;
+	background-color: white;
 	border-bottom: 1px solid #EFEFEE;
 	align-items: center;
 	color: #9E999C;
@@ -18,8 +25,8 @@ body{
 .title{
 	flex:auto;
 	display: flex;
-	justify-content: flex-start;
-	padding:40px 20px 40px 20px;
+	align-items: center;
+	padding:40px 20px;
 }
 .logo{
 	padding-right: 16px;
@@ -28,9 +35,9 @@ body{
 }
 .profil_utilisateur{
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	border-left:1px solid #EFEFEE;
-	padding:40px 20px 40px 20px;
+	padding:40px 20px;
 }
 .avatar{
 	border-radius: 50%;
@@ -38,19 +45,78 @@ body{
 	padding-right: 16px;
 	
 }
-.titre du menu
+
+/*titre du menu*/
 
 .container{
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	max-width: 800px;
-	padding: 40px 20px 40px 20px;
+	padding: 40px 20px;
+
+}
+@media (min-width: 800px){
+	.container{
+		margin:auto;
+	}
+	.carte{
+		margin: auto;
+	}
 
 }
 .main_title{
 	font-size: 40px;
 	font-weight: normal;
+	padding-bottom: 20px;
 }
 .sous-titre{
 	color: #B4B4B4;
 }
+
+/*cartes*/
+
+.carte{
+	margin: auto;
+	max-width: 600px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: white;
+	border:1px solid grey;
+	padding: 40px 20px;
+	border-radius: 10px;
+}
+.cercle{
+	
+	flex-direction: row;
+	background-color:#E5EFF5;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icone{
+	display: flex;
+	align-self: center;
+	flex-direction: row;
+	width: 50px;
+	height: 50px;
+}
+.contenu{
+	flex: auto;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+.main_title_carte{
+	font-size: 32px;
+	padding-bottom: 8px;
+}
+.sous-titre_carte{
+	
+	color: #B4B4B4;
+}
+
