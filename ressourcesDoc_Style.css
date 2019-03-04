@@ -144,3 +144,25 @@ h1{
 	align-items: center;
 
 }
+
+/*responsive*/
+
+@media(max-width: 600px){
+	.menu{
+		flex-direction: column-reverse;
+		align-items: flex-start;
+
+	}
+	.profil_utilisateur{
+		border: 0;
+	}
+	.container{
+		flex-direction: column;
+		text-align: center;
+	}
+	.carte{
+		flex-direction: column;
+	}
+
+}
+
