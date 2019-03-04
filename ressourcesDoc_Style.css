@@ -83,9 +83,10 @@ h1{
 	flex-direction: row;
 	align-items: center;
 	background-color: white;
-	border:1px solid grey;
+	border:1px solid #FBF8FB;
 	padding: 40px 20px;
 	border-radius: 10px;
+	margin-bottom: 20px;
 }
 .cercle{
 	
@@ -119,4 +120,14 @@ h1{
 	
 	color: #B4B4B4;
 }
+.cercle2{
+	flex-direction: row;
+	background-color:#FEE0DF;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
+}
