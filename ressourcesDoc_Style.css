@@ -28,6 +28,8 @@ h1{
 	flex:auto;
 	display: flex;
 	align-items: center;
+	align-self: flex-start;
+	height: auto;
 	padding:40px 20px;
 }
 .logo{
@@ -35,7 +37,7 @@ h1{
 	width: 50px;
 	height: 50px;
 }
-.profil_utilisateur{
+.utilisateur{
 	display: flex;
 	align-items: center;
 	border-left:1px solid #EFEFEE;
@@ -49,11 +51,11 @@ h1{
 
 /*ajout bulle notification*/
 
-.notif{
+.bullenotif{
 	padding-right: 16px;
 	position: relative;
 }
-.notif::after{
+.bullenotif::after{
 	content:"3";
 	position: absolute;
 	right: 0;
@@ -67,9 +69,15 @@ h1{
 	justify-content: center;
 	align-items: center;
 	font-size: 16px;
-
 }
-
+.notif{
+	display: flex;
+	padding:40px 20px;
+	border-top: 1px solid #EFEFEE;
+	border-left: 1px solid#EFEFEE;
+	flex-direction: column;
+	font-size: 16px;
+}
 /*titre*/
 
 .container{
